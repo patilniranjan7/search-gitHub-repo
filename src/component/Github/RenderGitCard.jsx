@@ -9,7 +9,7 @@ export default function RenderGitCard({ data, ...props }) {
         <Grid container>
             {
                 (data || []).map((gitdata) =>
-                    <CardUI>
+                    <CardUI key={gitdata?.clone_url}>
                         <GitCard gitdata={gitdata} />
                     </CardUI>
                 )

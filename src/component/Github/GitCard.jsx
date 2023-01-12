@@ -4,7 +4,7 @@ import React from 'react'
 export default function GitCard({ gitdata }) {
     return (
         <>
-            <div container className='w-[80%] sm:flex py-12 m-auto'>
+            <div className='w-[80%] sm:flex py-12 m-auto'>
                 <Avatar alt="" src={gitdata?.owner?.avatar_url} sx={{ width: 56, height: 56 }} />
                 <Grid item xs={12} className='text-truncate overflow-hidden p-1'>
                     <Link href={gitdata?.clone_url} underline='none' color="primary">
